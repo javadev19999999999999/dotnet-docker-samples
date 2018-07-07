@@ -2,7 +2,8 @@ agent {
   dockerfile {
     filename 'Dockerfile'
   }
-}
 node {
     docker ps -a
 }
+}
+
