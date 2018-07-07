@@ -3,11 +3,3 @@ agent {
     filename 'Dockerfile'
   }
 }
-
-node {
-  stage "Run in container "
-  docker.image('myapp').inside {
-    // run your command
-    whoami
-  }
-}
