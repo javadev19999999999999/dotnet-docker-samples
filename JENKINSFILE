@@ -4,6 +4,10 @@ agent {
   }
 }
 
-steps {
-                sh 'node --version'
-            }
+node('docker') {
+  stage "Run in container "
+  docker.image('myapp').inside {
+    // run your command
+    whoami
+  }
+}
