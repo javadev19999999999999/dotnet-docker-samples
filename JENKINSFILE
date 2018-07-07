@@ -1,9 +1,14 @@
-agent {
-  dockerfile {
-    filename 'Dockerfile'
-  }
-}
-
-node {
-  echo "test"
+pipeline {
+    agent {
+        dockerfile {
+         filename 'Dockerfile'
+        }
+    }
+    stages {
+        stage('Get IP') {
+            steps {
+                sh 'ifconfig'
+            }
+        }
+    }
 }
