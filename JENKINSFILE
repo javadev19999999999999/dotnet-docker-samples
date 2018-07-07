@@ -5,6 +5,8 @@ agent {
 
 }
 
-node {
-  bat whoami
-}
+steps{
+            script{
+              
+                    bat "whoami"
+                }
