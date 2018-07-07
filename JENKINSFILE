@@ -5,5 +5,5 @@ agent {
 }
 
 node {
-bat "whoami"
+bat "docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp"
 }
