@@ -5,5 +5,5 @@ agent {
 }
 
 node {
-bat 'docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp'
+bat 'echo "Please visit ";docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp'
 }
