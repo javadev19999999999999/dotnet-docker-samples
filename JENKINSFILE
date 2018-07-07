@@ -2,11 +2,4 @@ pipeline {
     agent {
         docker { image 'aspnetapp' }
     }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
-            }
-        }
-    }
-}
+    
