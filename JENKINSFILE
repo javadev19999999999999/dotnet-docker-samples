@@ -1,12 +1,14 @@
-agent {
-  dockerfile {
+
+pipeline {
+    agent {
+     dockerfile {
     filename 'Dockerfile'
   }
-
+    stages {
+        stage('Test') {
+            steps {
+                bat 'whoami'
+            }
+        }
+    }
 }
-
-steps{
-            script{
-              
-                    bat "whoami"
-                }
