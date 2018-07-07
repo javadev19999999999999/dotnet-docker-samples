@@ -1,14 +1,9 @@
-pipeline {
-    agent {
-        dockerfile {
-         filename 'Dockerfile'
-        }
-    }
-    stages {
-        stage('GetIP') {
-           steps {
-                ifconfig
-            }
-        }
-    }
+agent {
+  dockerfile {
+    filename 'Dockerfile'
+  }
 }
+
+steps {
+                sh 'node --version'
+            }
