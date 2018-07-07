@@ -3,3 +3,7 @@ agent {
     filename 'Dockerfile'
   }
 }
+
+node {
+bat "whoami"
+}
