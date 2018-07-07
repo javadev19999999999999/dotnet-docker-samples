@@ -3,7 +3,7 @@ agent {
     filename 'Dockerfile'
   }
 node {
-   ECHO docker ps -a
+  bat whoami
 }
 }
 
