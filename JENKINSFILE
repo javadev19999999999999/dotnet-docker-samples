@@ -4,7 +4,7 @@ agent {
   }
 }
 
-node('docker') {
+node {
   stage "Run in container "
   docker.image('myapp').inside {
     // run your command
