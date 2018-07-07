@@ -3,7 +3,7 @@ agent {
     filename 'Dockerfile'
   }
 node {
-    docker ps -a
+   ECHO docker ps -a
 }
 }
 
