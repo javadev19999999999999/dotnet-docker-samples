@@ -2,8 +2,9 @@ agent {
   dockerfile {
     filename 'Dockerfile'
   }
+
+}
+
 node {
   bat whoami
 }
-}
-
