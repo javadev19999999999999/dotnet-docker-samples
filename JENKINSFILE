@@ -1,6 +1,11 @@
+node {
+        stage("Build Container") {
 
-agent {
+          agent {
   dockerfile {
     filename 'Dockerfile'
   }
+  }
+}
+
 }
